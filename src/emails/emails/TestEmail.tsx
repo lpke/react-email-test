@@ -1,13 +1,12 @@
-import { Button, Html } from "@react-email/components";
+import Template from "../../components/Email";
+import { Button } from "@react-email/components";
 
 export default function TestEmail() {
   return (
-    <Html>
-      <Button
-        style={{ background: "#000", color: "#fff", padding: "12px 20px", cursor: "pointer" }}
-      >
+    <Template colors={{ purple: "#300431" }}>
+      <Button className="bg-purple cursor-pointer py-4 px-6 text-white">
         Example Button
       </Button>
-    </Html>
+    </Template>
   );
 }
