@@ -1,39 +1,18 @@
-import Email from "../components/Email";
-import {
-  Text,
-  Container,
-  Img,
-  Row,
-  Section,
-  Heading,
-  Button,
-} from "@react-email/components";
-
-const colors = {
-  purple: "#300431",
-  orange: "#FF5D2B",
-  blue: "#CEEDFF",
-  cream: "#FFFCF2",
-  grey: "#D9D9D9",
-  textgrey: "#363841",
-};
+import Email from "../../components/Email";
+import { Text, Container, Row, Section } from "@react-email/components";
+import Wave from "../blocks/Wave";
+import Headline from "../blocks/Headline";
+import theme from "../../theme";
+import Button from "../blocks/Button";
 
 export default function Header() {
   return (
-    <Email colors={colors} className="bg-gray-100 py-4">
+    <Email colors={theme} className="bg-gray-100 py-4">
       <Container className="bg-white w-[600px] max-w-full rounded-md overflow-hidden">
-        <Section>
-          <Img src="/static/sweep_orange.png" className="md:w-auto w-[128px]" />
-        </Section>
+        <Wave />
 
         <Section className="p-6 pt-3 md:p-10 md:pt-4">
-          <Row>
-            <Heading as="h2" className="text-purple">
-              Hi <span className="text-orange">John,</span>
-              <br />
-              Headline text example
-            </Heading>
-          </Row>
+          <Headline />
 
           <Row>
             <Text className="text-textgrey">
@@ -53,9 +32,7 @@ export default function Header() {
 
           <Section className="mt-4">
             <Row>
-              <Button className="bg-purple text-white rounded-md w-[200px] text-center p-[10px] shadow-md">
-                Call to action
-              </Button>
+              <Button>Call to action</Button>
             </Row>
           </Section>
         </Section>
