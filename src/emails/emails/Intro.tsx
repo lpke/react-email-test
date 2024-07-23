@@ -1,10 +1,10 @@
+import theme from "../../theme";
 import Email from "../../components/Email";
 import { Container, Row, Section } from "@react-email/components";
 import Wave from "../blocks/Wave";
 import Headline from "../blocks/Headline";
-import theme from "../../theme";
-import Button from "../blocks/Button";
 import Content from "../blocks/Content";
+import Button from "../blocks/Button";
 
 export default function Header() {
   return (
