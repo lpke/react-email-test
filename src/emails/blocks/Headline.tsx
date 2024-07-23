@@ -6,7 +6,7 @@ export default function Headline() {
   return (
     <Email colors={theme}>
       <Row>
-        <Heading as="h2" className="text-purple">
+        <Heading as="h2" className="text-purple text-left">
           Hi <span className="text-orange">John,</span>
           <br />
           Headline text example
